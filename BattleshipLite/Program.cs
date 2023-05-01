@@ -72,7 +72,7 @@ namespace BattleshipLite
                 // Go back to begining if not a valid shot
 
                 string shot = AskForShot();
-                (string row, int column) = GameLogic.SplitShotIntoRowAndColumn(shot);
+                (row, column) = GameLogic.SplitShotIntoRowAndColumn(shot);
                 isValidShot = GameLogic.ValidateShot(activePlayer, row, column);
                 if (isValidShot == false)
                 {
