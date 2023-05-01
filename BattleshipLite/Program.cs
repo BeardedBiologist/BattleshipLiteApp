@@ -53,8 +53,12 @@ namespace BattleshipLite
 
         private static void IdentifyWinner(PlayerInfoModel winner)
         {
+      
             Console.WriteLine($"Congratulations to { winner.UsersName }");
             Console.WriteLine($"{ winner.UsersName } took { GameLogic.GetShotCount(winner) } shots.");
+            Console.WriteLine();
+            DisplayShotGrid(winner);
+            
 
         }
 
